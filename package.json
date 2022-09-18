@@ -1,0 +1,20 @@
+{
+  "name": "mft-2-tailwind-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tailwind": " npx tailwindcss -i ./src/tailwind.css -o ./css/main.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.1.8"
+  },
+  "dependencies": {
+    "fontawesome-4.7": "^4.7.0",
+    "live-server": "^1.2.2",
+    "swiper": "^8.3.2"
+  }
+}

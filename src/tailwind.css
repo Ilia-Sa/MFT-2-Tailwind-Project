@@ -1,0 +1,643 @@
+/*@tailwind base;*/
+@tailwind components;
+@tailwind utilities;
+@layer utilities{
+    .main{
+        @apply flex items-center flex-col dark:bg-slate-800
+    }
+    .header{
+        @apply md:flex md:w-[80%] md:my-[60px] md:h-[40px] md:flex-wrap md:flex-row md:justify-between flex-col w-[100%]
+    }
+    .menu{
+        @apply flex flex-row md:my-[0px] my-[30px] justify-center leading-[40px]
+    }
+    .slider{
+        @apply md:w-[80%] h-[520px] w-[100%]
+    }
+    .about{
+        @apply md:w-[80%] flex items-center flex-col my-[90px]
+    }
+    .projects{
+        @apply xl:w-[1200px] flex  items-center flex-col
+    }
+    .team-slider{
+        @apply w-[100%] h-[700px]
+    }
+    .reviews{
+        @apply md:w-[80%]  w-[100%] md:my-[90px] my-[45px]
+    }
+    .contact{
+        @apply w-[100%] flex flex-col items-center bg-[black]
+    }
+
+    /* swiper */
+    .slider>div.swiper {
+        width: 100%;
+        height: 100%;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* end swiper */
+
+
+}
+@layer utilities{
+    /* setting */
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: "Segoe UI Historic";
+    }
+    /* end setting */
+    /* header */
+    section.header>div.logo{
+        font-size: 30px;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        @apply dark:text-[white]
+    }
+    section.header>div.menu>nav>ul{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        list-style: none;
+    }
+    section.header>div.menu>nav>ul>li{
+        margin: 0 12px;
+        transition: all 300ms linear;
+    }
+    section.header>div.menu>nav>ul>li>a{
+        text-decoration: none;
+        color: #989898;
+        text-transform: capitalize;
+        transition: all 300ms linear;
+        @apply dark:text-[white]
+    }
+    section.header>div.menu>nav>ul>li:hover>a{
+        color: black;
+        @apply dark:text-[grey]
+    }
+    section.header>div.menu>div.dark-button>button{
+        box-sizing: border-box;
+        background-color: #989898;
+        border: 1px solid #989898;
+        box-shadow: 1px 1px 5px black inset;
+        transition: all 300ms linear;
+        @apply dark:bg-[white] dark:shadow-none py-[5px] md:px-[15px] px-[5px]
+    }
+    section.header>div.menu>div.dark-button>button:hover{
+        background-color: #ffffff;
+        @apply dark:bg-[grey] dark:text-[white]
+    }
+    /****** end header ******/
+
+
+    /****** swiper slide ******/
+    section.slider>div.swiper>div.swiper-wrapper>div.swiper-slide{
+        display: flex;
+        flex-flow: column;
+        width: 100%;
+        height: 100%;
+        background-color: #ffe1bd;
+        box-sizing: border-box;
+        @apply dark:bg-[#533483] dark:text-[white]
+    }
+    section.slider>div.swiper>div.swiper-wrapper>div.swiper-slide>h1{
+        font-size: 48px;
+        font-weight: bold;
+    }
+    section.slider>div.swiper>div.swiper-wrapper>div.swiper-slide>div.vl{
+        content: "";
+        width: 60px;
+        height: 2px;
+        margin: 30px 0;
+        @apply dark:bg-[white] bg-[black]
+    }
+    section.slider>div.swiper>div.swiper-wrapper>div.swiper-slide>p{
+        font-size: 24px;
+    }
+    section.slider>div.swiper>div.swiper-wrapper>div.swiper-slide>a{
+        padding: 20px 40px;
+        margin-top: 80px;
+        background-color: black;
+        border-radius: 40px;
+        text-decoration: none;
+        text-transform: capitalize;
+        color: white;
+        font-size: 18px;
+        font-weight: lighter;
+        transition: all 300ms linear;
+    }
+    section.slider>div.swiper>div.swiper-wrapper>div.swiper-slide>a:hover{
+        background-color: #989898;
+        color: black;
+    }
+    /* swiper slide end */
+
+
+    /****** about ******/
+    /* about header */
+    section.about>div.about-header{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    section.about>div.about-header>h1{
+        @apply md:text-[60px] text-[40px] dark:text-[white] capitalize
+    }
+    /* about header end  */
+
+    /* about item 1 */
+    section.about>div.first{
+        @apply md:w-[100%] w-[90%] flex lg:flex-row flex-col my-[40px]
+    }
+    section.about>div.first>div.image{
+        @apply lg:w-[50%] w-[100%] flex lg:justify-start justify-center
+    }
+    section.about>div.first>div.image>img{
+        background-size: cover;
+        @apply xl:w-[500px]  xl:h-[500px] w-[300px] h-[360px] object-cover
+    }
+    section.about>div.first>div.content{
+        @apply lg:w-[50%] w-[100%] flex flex-col lg:items-start items-center lg:my-[0px] my-[20px]
+    }
+    section.about>div.first>div.content>h2{
+        font-size: 30px;
+        color: black;
+        @apply dark:text-[white]
+    }
+    section.about>div.first>div.content>h1{
+        font-size: 48px;
+        color: black;
+        justify-content: left;
+        @apply dark:text-[white]
+    }
+    section.about>div.first>div.content>div.vl{
+        content: "";
+        width: 60px;
+        height: 2px;
+        margin: 30px 0;
+        background-color: black;
+        @apply dark:bg-[white]
+    }
+    section.about>div.first>div.content>p{
+        @apply xl:text-[18px] text-[16px] text-[#989898] dark:text-[lightgrey]
+    }
+    section.about>div.first>div.content>a{
+        margin-top: 50px;
+        padding: 15px 30px;
+        border: 1px solid #d8d8d8;
+        border-radius: 45px;
+        font-size: 18px;
+        color: black;
+        text-decoration: none;
+        text-transform: capitalize;
+        transition: all 300ms linear;
+        @apply dark:bg-[#533483] dark:text-[white]
+    }
+    section.about>div.first>div.content>a:hover{
+        background-color: #ffe1bd;
+        color: #989898;
+        @apply dark:bg-[#ffe1bd] dark:text-[black]
+    }
+    /* end about item 1 */
+
+    /* about item 2 */
+    section.about>div.second{
+        @apply md:w-[100%] w-[90%] flex lg:flex-row flex-col-reverse my-[40px]
+    }
+    section.about>div.second>div.content{
+        @apply lg:w-[50%] w-[100%] flex flex-col lg:items-start items-center lg:my-[0px] my-[20px]
+    }
+    section.about>div.second>div.content>h2{
+        font-size: 30px;
+        color: black;
+        @apply dark:text-[white]
+    }
+    section.about>div.second>div.content>h1{
+        font-size: 48px;
+        color: black;
+        justify-content: left;
+        @apply dark:text-[white]
+    }
+    section.about>div.second>div.content>div.vl{
+        content: "";
+        width: 60px;
+        height: 2px;
+        margin: 30px 0;
+        background-color: black;
+        @apply dark:bg-[white]
+    }
+    section.about>div.second>div.content>p{
+        @apply xl:text-[18px] text-[16px] text-[#989898] dark:text-[lightgrey]
+    }
+    section.about>div.second>div.content>a{
+        margin-top: 50px;
+        padding: 15px 30px;
+        border: 1px solid #d8d8d8;
+        border-radius: 45px;
+        font-size: 18px;
+        color: black;
+        text-decoration: none;
+        text-transform: capitalize;
+        transition: all 300ms linear;
+        @apply dark:bg-[#533483] dark:text-[white]
+    }
+    section.about>div.second>div.content>a:hover{
+        background-color: #ffe1bd;
+        color: #989898;
+        @apply dark:bg-[#ffe1bd] dark:text-[black]
+    }
+    section.about>div.second>div.image{
+        @apply lg:w-[50%] w-[100%] flex lg:justify-end justify-center bg-auto
+    }
+    section.about>div.second>div.image>img{
+        @apply xl:w-[500px]  xl:h-[500px]  w-[300px] h-[360px] object-cover
+    }
+    /* end about item 2 */
+
+    /* about item 3 */
+    section.about>div.third{
+        @apply md:w-[100%] w-[90%] flex lg:flex-row flex-col my-[40px]
+    }
+    section.about>div.third>div.image{
+        @apply lg:w-[50%] w-[100%] flex lg:justify-start justify-center
+    }
+    section.about>div.third>div.image>img{
+
+        @apply xl:w-[500px]  xl:h-[500px] w-[300px] h-[360px] object-cover
+    }
+    section.about>div.third>div.content{
+        @apply lg:w-[50%] w-[100%] flex flex-col lg:items-start items-center lg:my-[0px] my-[20px]
+    }
+    section.about>div.third>div.content>h2{
+        font-size: 30px;
+        color: black;
+        @apply dark:text-[white]
+
+    }
+    section.about>div.third>div.content>h1{
+        font-size: 48px;
+        color: black;
+        justify-content: left;
+        @apply dark:text-[white]
+    }
+    section.about>div.third>div.content>div.vl{
+        content: "";
+        width: 60px;
+        height: 2px;
+        margin: 30px 0;
+        background-color: black;
+        @apply dark:bg-[white]
+    }
+    section.about>div.third>div.content>p{
+        @apply xl:text-[18px] text-[16px] text-[#989898] dark:text-[lightgrey]
+    }
+    section.about>div.third>div.content>a{
+        margin-top: 50px;
+        padding: 15px 30px;
+        border: 1px solid #d8d8d8;
+        border-radius: 45px;
+        font-size: 18px;
+        color: black;
+        text-decoration: none;
+        text-transform: capitalize;
+        transition: all 300ms linear;
+        @apply dark:bg-[#533483] dark:text-[white]
+    }
+    section.about>div.third>div.content>a:hover{
+        background-color: #ffe1bd;
+        color: #989898;
+        @apply dark:bg-[#ffe1bd] dark:text-[black]
+    }
+    /* end about item 3 */
+    /***** end about *****/
+
+
+
+    /***** projects *****/
+    section.projects>div.p-header{
+        width: 100%;
+        font-weight: 100;
+        text-align: center;
+        text-transform: capitalize;
+        @apply md:text-[60px] text-[40px] dark:text-[white]
+    }
+    section.projects>div.project-items{
+        @apply w-[100%] flex flex-wrap justify-center md:mt-[100px] mt-[50px] mb-[35px]
+    }
+    section.projects>div.project-items>div.p-item{
+        width: 364px;
+        margin: 0 15px;
+        display: flex;
+        align-items: center;
+        flex-flow: column;
+    }
+    section.projects>div.project-items>div.p-item>img{
+        @apply my-[15px] object-cover
+    }
+    section.projects>div.project-items>div.p-item:nth-of-type(1)>img:nth-of-type(1){
+        @apply md:w-[364px] md:h-[364px] w-[282px] h-[282px]
+    }
+    section.projects>div.project-items>div.p-item:nth-of-type(1)>img:nth-of-type(2){
+        @apply md:w-[364px] md:h-[590px] w-[282px] h-[395px]
+    }
+    section.projects>div.project-items>div.p-item:nth-of-type(2)>img:nth-of-type(1){
+        @apply md:w-[364px] md:h-[590px] w-[282px] h-[395px]
+    }
+    section.projects>div.project-items>div.p-item:nth-of-type(2)>img:nth-of-type(2){
+        @apply md:w-[364px] md:h-[364px] w-[282px] h-[282px]
+    }
+    section.projects>div.project-items>div.p-item:nth-of-type(3)>img:nth-of-type(1){
+        @apply md:w-[364px] md:h-[364px] w-[282px] h-[282px]
+    }
+    section.projects>div.project-items>div.p-item:nth-of-type(3)>img:nth-of-type(2){
+        @apply md:w-[364px] md:h-[590px] w-[282px] h-[395px]
+    }
+
+    section.projects>div.p-bottom{
+        width: 100%;
+        margin-top: 35px;
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: center;
+    }
+    section.projects>div.p-bottom>a.button{
+        padding: 20px 40px;
+        background-color: black;
+        border-radius: 40px;
+        text-decoration: none;
+        text-transform: capitalize;
+        color: white;
+        font-size: 18px;
+        font-weight: lighter;
+        transition: all 300ms linear;
+        @apply dark:bg-[#533483] dark:text-[white]
+    }
+    section.projects>div.p-bottom>a.button:hover{
+        background-color: #989898;
+        color: black;
+        @apply dark:bg-[#ffe1bd] dark:text-[black]
+    }
+    /***** end projects *****/
+
+
+
+    /***** team slider *****/
+    section.team-slider{
+        background-color: #ffe1bd;
+        @apply dark:bg-[#533483] dark:text-[white] h-[500px] md:h-[700px]
+    }
+    section.team-slider>div.t-s-head>h1{
+        text-transform: capitalize;
+        text-align: center;
+        @apply md:my-[80px] my-[40px] md:text-[60px] text-[40px]
+    }
+    section.team-slider>div.mySwiperTeam{
+        @apply md:w-[80%] w-[90%] md:h-[425px] h-[350px]
+    }
+
+    section.team-slider>div.swiper>div.swiper-wrapper>div.swiper-slide{
+        display: flex;
+        flex-flow: column;
+        background-color: transparent;
+        @apply dark:bg-[#533483] dark:text-[white]
+    }
+    section.team-slider>div.swiper>div.swiper-wrapper>div.swiper-slide>div.image>img{
+        border-radius: 50%;
+        background-color: #989898;
+        @apply md:w-[168px]  md:h-[168px] w-[84px] h-[84px] object-cover
+    }
+    section.team-slider>div.swiper>div.swiper-wrapper>div.swiper-slide>h2{
+        margin: 20px 0;
+        font-weight: bold;
+        text-transform: capitalize;
+        @apply md:text-[40px] text-[20px] md:my-[20px] my-[10px]
+    }
+    section.team-slider>div.swiper>div.swiper-wrapper>div.swiper-slide>div.vl{
+        content: "";
+        width: 60px;
+        height: 2px;
+        @apply dark:bg-[#533483] bg-[black]
+    }
+    section.team-slider>div.swiper>div.swiper-wrapper>div.swiper-slide>span{
+        margin-top: 20px;
+    }
+
+    .swiper-pagination-bullet-active {
+        color:#fff;
+        background: #000000;
+    }
+
+    .swiper-pagination-bullet{
+        padding: 5px 10px;
+        border-radius: 0;
+        margin: 10px;
+        width: auto;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        font-size: 12px;
+        color:#000;
+        opacity: 1;
+        background: rgba(0,0,0,0.2);
+    }
+    /***** end team slider *****/
+
+    /***** client reviews slider *****/
+    section.reviews>div.review-head{
+        width: 100%;
+        font-size: 60px;
+        text-align: center;
+        text-transform: capitalize;
+        margin-bottom: 100px;
+        @apply dark:text-[white]
+    }
+    section.reviews>div.mySwiperReview>div.swiper-wrapper>div.swiper-slide{
+        display: grid;
+        grid-template-areas:
+        'reviewbox reviewbox'
+        'images images'
+        ;
+        justify-content: space-evenly;
+        @apply dark:bg-slate-800
+    }
+    section.reviews>div.mySwiperReview>div.swiper-wrapper>div.swiper-slide>div.review-box{
+        grid-area: reviewbox;
+        width: 100%;
+        display: flex;
+        @apply md:flex-row flex-col
+    }
+
+    section.reviews>div.mySwiperReview>div.swiper-wrapper>div.swiper-slide>div.review-box>div.info{
+        margin-right: 50px;
+        display: flex;
+        flex-flow: column;
+       @apply md:w-[50%] w-[100%] md:mr-[50px] mr-[0] md:items-end items-center md:mb-[0] mb-[25px] dark:text-[white]
+    }
+    section.reviews>div.mySwiperReview>div.swiper-wrapper>div.swiper-slide>div.review-box>div.info>h2{
+        font-size: 40px;
+        text-transform: capitalize;
+        @apply dark:text-[white]
+    }
+    section.reviews>div.mySwiperReview>div.swiper-wrapper>div.swiper-slide>div.review-box>div.info>div.vl{
+        content: "";
+        width: 60px;
+        height: 2px;
+        margin: 30px 0;
+        background-color: black;
+        @apply dark:bg-[white]
+    }
+    section.reviews>div.mySwiperReview>div.swiper-wrapper>div.swiper-slide>div.review-box>div.review{
+        width: 50%;
+        display: flex;
+        flex-flow: column;
+        text-align: left;
+        @apply md:w-[50%] w-[100%] md:ml-[50px] ml-[0] md:items-start items-center
+    }
+    section.reviews>div.mySwiperReview>div.swiper-wrapper>div.swiper-slide>div.review-box>div.review>p{
+        font-size: 18px;
+        color: #989898;
+        padding: 0 20px;
+        box-sizing: border-box;
+        @apply dark:text-[lightgrey]
+    }
+
+    section.reviews>div.mySwiperReview>div.swiper-wrapper>div.swiper-slide>div.review-images{
+        grid-area: images;
+        width: 100%;
+        @apply md:my-[90px] my-[45px] flex flex-wrap xl:justify-between justify-evenly
+    }
+    section.reviews>div.mySwiperReview>div.swiper-wrapper>div.swiper-slide>div.review-images>img{
+        @apply md:w-[266px] w-[144px] md:h-[140px] h-[88px] my-[10px] object-cover
+    }
+    /***** end client reviews slider *****/
+
+    /***** contact + footer */
+    section.contact>*{
+        color: white;
+    }
+    section.contact>div.contact-header{
+        width: 80%;
+        @apply md:my-[90px] my-[40px]
+    }
+    section.contact>div.contact-header>h1{
+        width: 100%;
+        text-align: center;
+        @apply md:text-[60px] text-[30px]
+    }
+    section.contact>div.contact-items{
+        @apply md:w-[80%] w-[100%] flex md:flex-row flex-col justify-between md:mb-[100px] mb-[40px]
+    }
+    section.contact>div.contact-items>div.information{
+        @apply md:w-[50%] w-[100%] flex flex-col md:items-start items-center
+    }
+    section.contact>div.contact-items>div.information>span{
+        margin: 25px 0;
+        @apply md:text-[18px] text-[14px]
+    }
+    section.contact>div.contact-items>div.information>span>i{
+        font-size: 18px;
+        margin-right: 20px;
+    }
+    section.contact>div.contact-items>div.information>div.social{
+        display: flex;
+        flex-flow: row;
+    }
+    section.contact>div.contact-items>div.information>div.social>i{
+        margin: 0 10px;
+        text-align: center;
+        background-color: white;
+        color: black;
+        border-radius: 50%;
+        transition: all 300ms linear;
+        @apply md:w-[40px] w-[30px] h-[30px] md:h-[40px] md:text-[24px] text-[16px] md:leading-[40px] leading-[30px]
+    }
+    section.contact>div.contact-items>div.information>div.social>i:hover{
+        background-color: #989898;
+        color: #ffe1bd;
+        cursor: pointer;
+    }
+
+    section.contact>div.contact-items>div.forms{
+        @apply md:w-[50%] w-[100%] flex md:justify-start justify-center
+    }
+    section.contact>div.contact-items>div.forms>form{
+        width: 460px;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        box-sizing: border-box;
+    }
+    section.contact>div.contact-items>div.forms>form>input{
+        width: 100%;
+        padding: 20px 0;
+        background-color: transparent;
+        border: 0;
+        border-bottom: 1px solid #333333;
+        @apply md:text-[18px] text-[14px]
+    }
+    section.contact>div.contact-items>div.forms>form>input#submit{
+        align-self: flex-start;
+        width: auto;
+        background-color: white;
+        margin-top: 50px;
+        border-radius: 50px;
+        transition: all 300ms linear;
+        @apply md:mt-[50px] mt-[25px] md:py-[20px] py-[10px] md:px-[60px] px-[30px]
+    }
+    section.contact>div.contact-items>div.forms>form>input#submit:hover{
+        background-color: #989898;
+        color: #ffe1bd;
+        cursor: pointer;
+    }
+    /* footer */
+    section.contact>div.footer{
+        display: flex;
+        flex-flow: column;
+        width: 100%;
+        background-color: white;
+        @apply md:py-[50px] py-[25px] dark:bg-slate-800
+    }
+    section.contact>div.footer>h3{
+        width: 100%;
+        color: black;
+        font-size: 18px;
+        text-align: center;
+        @apply dark:text-[white]
+    }
+    section.contact>div.footer>h4{
+        width: 100%;
+        color: #989898;
+        text-align: center;
+    }
+    /* end footer */
+    /***** end contact + footer */
+
+}

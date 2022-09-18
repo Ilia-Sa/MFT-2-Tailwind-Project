@@ -1,0 +1,397 @@
+<!----------
+Created By Ilia Safarian
+-------->
+
+<!doctype html>
+<html lang="en" id="html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tailwind</title>
+    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="node_modules/fontawesome-4.7/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+    <div class="main">
+        <!-- header -->
+        <section class="header">
+            <div class="logo">
+                <span class="">clemo.</span>
+            </div>
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">services</a></li>
+                        <li><a href="#">works</a></li>
+                        <li><a href="#">blog</a></li>
+                        <li><a href="#">contact</a></li>
+                    </ul>
+                </nav>
+                <div class="dark-button">
+                    <button onclick="nameFunction()" id="darkMode">
+                        <i class="fa fa-moon-o" aria-hidden="true"></i>
+                        <span id="myDIV">Dark Mode</span>
+                    </button>
+
+                </div>
+            </div>
+        </section>
+        <!-- end header -->
+
+        <!-- slider -->
+        <section class="slider">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <h1>we are clemo.</h1>
+                        <div class="vl"></div>
+                        <p>
+                            professionals
+                            <br/>
+                            in the creative industry
+                        </p>
+                        <a href="">
+                            get in touch
+                        </a>
+                    </div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">Slide 4</div>
+                    <div class="swiper-slide">Slide 5</div>
+                    <div class="swiper-slide">Slide 6</div>
+                    <div class="swiper-slide">Slide 7</div>
+                    <div class="swiper-slide">Slide 8</div>
+                    <div class="swiper-slide">Slide 9</div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <!-- end slider  -->
+        
+        <!-- about -->
+        <section class="about">
+            <!-- about header -->
+            <div class="about-header">
+                <h1>what we do?</h1>
+            </div>
+            <!-- end about header -->
+
+            <!------ about item ------>
+            <div class="first">
+                <div class="image left">
+                    <img src="./images/rv-kitchen-glamper.webp" alt="RV Kitchen">
+                </div>
+                <div class="content right">
+                    <h2>creative</h2>
+                    <h1>kitchen</h1>
+                    <div class="vl"></div>
+                    <p>
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                        <br/>
+                        <br/>
+                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                    </p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+
+            <!------ about item ------>
+            <div class="second">
+                <div class="content left">
+                    <h2>art</h2>
+                    <h1>installation</h1>
+                    <div class="vl"></div>
+                    <p>
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                        <br/>
+                        <br/>
+                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                    </p>
+                    <a href="#">learn more</a>
+                </div>
+                <div class="image right">
+                    <img src="./images/RV-Camper2.png" alt="RV Camper">
+                </div>
+            </div>
+
+            <!------ about item ------>
+            <div class="third">
+                <div class="image left">
+                    <img src="./images/Roundup-RV-1a-Airstream-Pendleton%20(1).jpg" alt="RV Design">
+                </div>
+                <div class="content right">
+                    <h2>print</h2>
+                    <h1>design</h1>
+                    <div class="vl"></div>
+                    <p>
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                        <br/>
+                        <br/>
+                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                    </p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+
+        </section>
+        <!-- end about -->
+
+        <!-- projects -->
+        <section class="projects">
+            <div class="p-header">
+                <h2>our best work</h2>
+            </div>
+            <div class="project-items">
+                <div class="p-item">
+                    <img src="./images/Best-work-1.jpg" alt="RV Project"/>
+                    <img src="./images/Best-work-2.jpg" alt="RV Project"/>
+                </div>
+                <div class="p-item">
+                    <img src="./images/Best-work-3.png" alt="RV Project"/>
+                    <img src="./images/Best-work-4.jpg" alt="RV Project"/>
+                </div>
+                <div class="p-item">
+                    <img src="./images/Best-work-6jpg.jpg" alt="RV Project"/>
+                    <img src="./images/Best-work-5.jpg" alt="RV Project"/>
+                </div>
+            </div>
+            <div class="p-bottom">
+                <a href="#" class="button">
+                    learn more
+                </a>
+            </div>
+        </section>
+        <!-- end projects -->
+
+        <!-- team slider -->
+        <section class="team-slider">
+            <div class="t-s-head">
+                <h1>our best team</h1>
+            </div>
+            <div class="swiper mySwiperTeam">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="image">
+                            <img src="./images/Richard%20Hammond.jpg" alt="team">
+                        </div>
+                        <h2>paul hall</h2>
+                        <div class="vl"></div>
+                        <span>art director</span>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="image">
+                            <img src="./images/james-may.webp" alt="team">
+                        </div>
+                        <h2>joshua
+                            <br/>
+                            spencer</h2>
+                        <div class="vl"></div>
+                        <span>founder</span>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="image">
+                            <img src="./images/Jeremy%20Clarckson.jpg" alt="team">
+                        </div>
+                        <h2>diane lewis</h2>
+                        <div class="vl"></div>
+                        <span>art, designer</span>
+                    </div>
+                    <div class="swiper-slide">Slide 4</div>
+                    <div class="swiper-slide">Slide 5</div>
+                    <div class="swiper-slide">Slide 6</div>
+                    <div class="swiper-slide">Slide 7</div>
+                    <div class="swiper-slide">Slide 8</div>
+                    <div class="swiper-slide">Slide 9</div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <!-- end slider -->
+
+        <!-- client reviews slider -->
+        <section class="reviews">
+            <div class="review-head">
+                client say's
+            </div>
+            <div class="swiper mySwiperReview">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="review-box">
+                            <div class="info">
+                                <h2>frank sims</h2>
+                                <div class="vl"></div>
+                                <span>photographer</span>
+                            </div>
+                            <div class="review">
+                                <p>
+                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="review-images">
+                            <img src="./images/Review-Image.jpg" alt="Review">
+                            <img src="./images/Review-image2.jpg" alt="Review">
+                            <img src="./images/Review-image3.jpg" alt="Review">
+                            <img src="./images/Review-image4.jpg" alt="Review">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">Slide 4</div>
+                    <div class="swiper-slide">Slide 5</div>
+                    <div class="swiper-slide">Slide 6</div>
+                    <div class="swiper-slide">Slide 7</div>
+                    <div class="swiper-slide">Slide 8</div>
+                    <div class="swiper-slide">Slide 9</div>
+                </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+        </section>
+        <!-- end client reviews slider -->
+
+        <!-- contact -->
+        <section class="contact">
+            <div class="contact-header">
+                <h1>get in touch</h1>
+            </div>
+            <div class="contact-items">
+                <div class="information">
+                    <span class="location">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        23 Mulholland Drive, Suite 721. Los Angeles 10010
+                        <br/>
+                        100 S. Main Street. Los Angeles 90012
+                    </span>
+                    <span class="number">
+                        <i class="fa fa-mobile" aria-hidden="true"></i>
+                        +1-670-567-5590
+                    </span>
+                    <span class="email"><i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        hello@clemocreative.com
+                    </span>
+                    <div class="social">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                        <i class="fa fa-google-plus" aria-hidden="true"></i>
+                        <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="forms">
+                    <form action="">
+                        <input type="text" name="name" placeholder="name">
+                        <input type="email" name="email" placeholder="email">
+                        <input type="text" name="message" placeholder="message">
+                        <input type="submit" name="submit" id="submit">
+                    </form>
+                </div>
+            </div>
+            <div class="footer">
+                <h3>&copy; 2016 clemo.</h3>
+                <h4>all rights received</h4>
+            </div>
+        </section>
+        <!-- end contact -->
+
+    </div>
+
+
+
+    <!-- Swiper JS -->
+    <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            direction: "vertical",
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiperTeam", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            slidesPerGroup: 3,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiperReview", {
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
+
+    <script>
+        let darkMode = document.getElementById("darkMode")
+        let html = document.getElementById("html")
+        let flag = true
+        darkMode.addEventListener("click",function (){
+            if (flag == true){
+                html.setAttribute("class","dark")
+                flag=false
+            }
+            else{
+                html.setAttribute("class","")
+                flag=true
+            }
+        })
+
+
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark')
+        } else {
+            document.documentElement.classList.remove('dark')
+        }
+
+        // Whenever the user explicitly chooses light mode
+        localStorage.theme = 'light'
+
+        // Whenever the user explicitly chooses dark mode
+        localStorage.theme = 'dark'
+
+        // Whenever the user explicitly chooses to respect the OS preference
+        localStorage.removeItem('theme')
+
+    </script>
+
+    <script>
+        function nameFunction() {
+            var x = document.getElementById("myDIV");
+            if (x.innerHTML === "Dark Mode") {
+                x.innerHTML = "Light Mode";
+            } else {
+                x.innerHTML = "Dark Mode";
+            }
+        }
+    </script>
+
+
+
+</body>
+</html>
